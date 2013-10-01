@@ -6,7 +6,6 @@ LIBS += \
 SOURCES += \
     src/main.cpp \
     src/server.cpp \
-    src/client.cpp
 
 HEADERS += \
     src/master_header.hpp \
