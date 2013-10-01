@@ -1,7 +1,7 @@
 chatapp
 =======
 
-Simple Chat application lets to communicate with your friends
+Easy and secure Chat application
 
 Objectives as on 30th Oct/2013
 ==========
