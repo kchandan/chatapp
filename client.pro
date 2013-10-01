@@ -4,10 +4,9 @@ LIBS += \
        -lboost_thread\
 
 SOURCES += \
-    src/main.cpp \
-    src/client.cpp
+    client/client.cpp
 
 HEADERS += \
-    src/master_header.hpp \
-    src/chat_message.hpp
+    inc/master_header.hpp \
+    inc/chat_message.hpp
 
