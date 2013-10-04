@@ -5,6 +5,7 @@ LIBS += \
 
 SOURCES += \
     server/server.cpp \
+    server/server_ui.cpp
 
 HEADERS += \
     inc/master_header.hpp \
