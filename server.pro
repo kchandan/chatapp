@@ -8,6 +8,6 @@ SOURCES += \
     server/server_ui.cpp
 
 HEADERS += \
-    inc/master_header.hpp \
-    inc/chat_message.hpp
+    inc/chat_message.hpp \
+    server/chat_message.hpp
 

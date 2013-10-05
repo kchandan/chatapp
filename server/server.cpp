@@ -18,7 +18,8 @@
 #include <boost/shared_ptr.hpp>
 #include <boost/enable_shared_from_this.hpp>
 #include <boost/asio.hpp>
-//#include "inc/chat_message.hpp"
+#include "chat_message.hpp"
+
 
 using boost::asio::ip::tcp;
 
