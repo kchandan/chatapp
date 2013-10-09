@@ -124,14 +124,30 @@ void insert_before(int i, Node **head,int val)
 
 int init_node(int i,Node **head)
 {
+	*head =(Node*)malloc(sizeof(Node));
+	(*head)->data=i;
+	return 0;
+}
+
+void reverse(Node **head)
+{
+	Node *cursor=NULL,*next;
+	while(*head)
+	{
+		next= (*head)->next;
+		(*head)->next=cursor;
+		cursor=*head;
+		*head=next;
+	}
+	*head=cursor;
 }
 
 int main(void)
 {
 	int i=1;
-	Node* head=(Node*)malloc(sizeof(Node));
-//	init_node(1,&head);
-	head->data=0;head->next=NULL;
+	Node* head;//(Node*)malloc(sizeof(Node));
+	init_node(0,&head);
+//	head->data=0;head->next=NULL;
 	for(;i < 6;i++)
 		append_node(i,&head);
 	print_node(&head);
@@ -141,7 +157,9 @@ int main(void)
 	insert_before(0,&head,10);
 	printf("\nAfter Insert\n");
 	print_node(&head);
-
+	reverse(&head);
+	printf("\n After reverse\n");
+	print_node(&head);
     return 0;
 }
 
